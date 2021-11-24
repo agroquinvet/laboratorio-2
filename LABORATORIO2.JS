@@ -8,15 +8,7 @@ var personas =[
 
 var table= document.createElement("table");
 document.body.appendChild(table)
-for (let i = 0; i < 3; i++) {
-    let tr = document.createElement("tr");
-     table.appendChild(tr);
-    
-     for (let j = 0; j < 3; j++) {
-         var tdTex= document.createTextNode(personas[i][j]);
-         tr.appendChild(tdTex);
-         
-     }}
+
     
 
 
@@ -26,6 +18,15 @@ if (rol== "admin" || rol== "recurse") {
 }if(edad == "1234"){
      var usuario = prompt("ingrese su usuario")
     document.write(document.getElementsByName("h1").texContent=`Hola! ${usuario} bienvendio a esta tu web`)
+    for (let i = 0; i < 6; i++) {
+    let tr = document.createElement("tr");
+     table.appendChild(tr);
+    
+     for (let j = 0; j < 5; j++) {
+         var tdTex= document.createTextNode(personas[i][j]);
+         tr.appendChild(tdTex);
+         
+     }}
   
     
 }else{
